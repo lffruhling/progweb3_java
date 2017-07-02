@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSAulaIFFar/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSAulaIFFar/">
+
+<xs:element name="alterarPessoa" type="tns:alterarPessoa"/>
+
+<xs:element name="alterarPessoaResponse" type="tns:alterarPessoaResponse"/>
+
+<xs:element name="cadastrarPessoa" type="tns:cadastrarPessoa"/>
+
+<xs:element name="cadastrarPessoaResponse" type="tns:cadastrarPessoaResponse"/>
+
+<xs:element name="excluirPessoa" type="tns:excluirPessoa"/>
+
+<xs:element name="excluirPessoaResponse" type="tns:excluirPessoaResponse"/>
+
+<xs:element name="listarPessoa" type="tns:listarPessoa"/>
+
+<xs:element name="listarPessoaResponse" type="tns:listarPessoaResponse"/>
+
+<xs:element name="listarTodos" type="tns:listarTodos"/>
+
+<xs:element name="listarTodosResponse" type="tns:listarTodosResponse"/>
+
+<xs:complexType name="cadastrarPessoa">
+<xs:sequence>
+<xs:element name="nome" type="xs:string" minOccurs="0"/>
+<xs:element name="cpf" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="fone" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cadastrarPessoaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="excluirPessoa">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="excluirPessoaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alterarPessoa">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="nome" type="xs:string" minOccurs="0"/>
+<xs:element name="cpf" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="fone" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alterarPessoaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPessoa">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPessoaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarTodos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarTodosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
